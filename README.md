@@ -4,7 +4,8 @@
     <img
       alt="M134 -The Weapon you need."
       src="m134_logo.png"
-      width="600"
+      width="800"
+      height="250"
     />
   </a>
 
