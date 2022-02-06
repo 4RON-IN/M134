@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://hub.docker.com/u/4RON-IN">
+  <a href="https://hub.docker.com/repository/docker/anoopron/m134">
     <img
       alt="M134 -The Weapon you need."
       src="m134_logo.png"
@@ -70,45 +70,38 @@ M134 is a suite of automated reconnaissance tools used for enumeration and disco
 
 This tool can be run in below two ways:
 
-### Way 1 - Using this github repo
+### Option 1 - Using this github repo
 
 To build the container yourself manually, git clone the repo, then build and run the following commands
 
     Step 1: git clone --depth 1 https://github.com/4RON-IN/M134.git
     Step 2: cd M134
-    Step 3: docker build -t M134 .   #(Build your docker container)
-    Step 4: docker run --rm -it -v /path/to/local/directory:/mainData M134 -p [--program] <google> -t [--target] google.com     #(After building the container, run it)
+    Step 3: docker build -t m134 .   #(Build your docker container)
+    Step 4: docker run --rm -it -v /path/to/local/directory:/mainData m134 -p [--program] <google> -t [--target] google.com     #(After building the container, run it)
 
 Also, If you have access token for run findomain. You must configure the Dockerfile ("ENTER_TOKEN_HERE").
 
     Typical command looks like this:
-    docker run --rm -it -v /home/kali/M134:/mainData M134 -p google -t google.com
+    docker run --rm -it -v /home/kali/M134:/mainData m134 -p google -t google.com
     
 
 
-### Way 2 - Running directly from docker hub
+### Option 2 - Running directly from docker hub
 
-Use image from docker hub: [4RON-IN/M134](https://hub.docker.com/u/4RON-IN/M134)
+Use image from docker hub: [anoopron/m134](https://hub.docker.com/repository/docker/anoopron/m134)
 
     Running without access tokens:
-    docker pull 4RON-IN/M134
-    docker run --rm -it -v /path/to/local/directory:/mainData --name M134 4RON-IN/M134 -p [--program] <google> -t [--target] google.com
+    docker pull anoopron/m134:latest
+    docker run --rm -it -v /path/to/local/directory:/mainData anoopron/m134:latest -p [--program] <google> -t [--target] google.com
     
     
     If you have access token then follow this:
-    docker pull 4RON-IN/M134
+    docker pull anoopron/m134:latest
     docker run --rm -it --env findomain_fb_token="fb_token" \
     --env findomain_spyse_token="spyse_token" \
     --env findomain_virustotal="virustotal_token" \
     --env findomain_securitytrails_token="securitytrails_token" \
-    -v /path/to/local/directory:/mainData --name M134 4RON-IN/M134 -p [--program] <google> -t [--target] google.com
-
-
-## Coffee Time
-
-If you like my content, please consider inviting me to a coffee. Thank you for your support!
-
-[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/4RON-IN)
+    -v /path/to/local/directory:/mainData anoopron/m134 -p [--program] <google> -t [--target] google.com
 
 
 ## Credits
