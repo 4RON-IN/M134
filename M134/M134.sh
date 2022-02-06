@@ -23,7 +23,7 @@ echo -e $green'
 # Usage
 Usage() {
     echo -e "$green
-Usage: ./M134.sh [-p/--program] <PROGRAM_NAME> [-t/--targetURL] <TARGETS_URL>
+Usage: ./M134.sh [-p/--program] <PROGRAM_NAME> [-t/--target] <TARGETS_URL>
 	"$end
     exit 1
 }
@@ -130,11 +130,14 @@ get_paramspider() {
 
     mkdir paramspider
 
-    for targets in $(cat /mainData/targets.txt); do
-        targets_file=$(echo $targets | sed -E 's/[\.|\/|:]+/_/g')
-        python3 /tools/ParamSpider/paramspider.py --domain $targets --exclude woff,css,js,png,svg,php,jpg --output paramspider/"$targets_file"_paramspider.txt
-    done
+        targets_file=$(echo $target | sed -E 's/[\.|\/|:]+/_/g')
+        python3 /tools/ParamSpider/paramspider.py --domain $target --exclude woff,css,js,png,svg,php,jpg --output paramspider/"$targets_file"_paramspider.txt
 }
+
+# get_gf() {
+#     echo -e $red"[+]"$end $bold"Checking gf patterns:"$end
+#     cat paramspider/"$targets_file"_paramspider.txt | 
+# }
 
 get_paths() {
     echo -e $red"[+]"$end $bold"Get Paths:"$end
