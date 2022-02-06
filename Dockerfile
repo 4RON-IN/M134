@@ -32,9 +32,6 @@ RUN wget -q https://dl.google.com/go/go1.16.13.linux-amd64.tar.gz -O go.tar.gz &
 ENV GOROOT "/usr/local/go"
 ENV GOPATH "/root/go"
 ENV PATH "$PATH:$GOROOT/bin:$GOPATH/bin"
-RUN echo "GO-GO-GO-GO-GO-GO-GO-GO-GO-GO-GO-GO-GO-GO"
-RUN echo $GOROOT
-RUN echo $GOPATH
 
 # TOOLS
 RUN mkdir tools \
@@ -94,6 +91,15 @@ RUN go get -u github.com/tomnomnom/assetfinder
     # Install Linkfinder
     RUN git clone https://github.com/GerbenJavado/LinkFinder.git
     RUN pip3 install termcolor
+
+    #Install gf
+    RUN go get -u github.com/tomnomnom/gf
+
+    #Copy gf patterns to ~/.gf
+    # RUN cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
+    # RUN git clone https://github.com/1ndianl33t/Gf-Patterns
+    # RUN cd Gf-Patterns
+    # RUN mv *.json ~/.gf
 
 # Findomain configuration
 ENV findomain_fb_token="ENTER_TOKEN_HERE"
