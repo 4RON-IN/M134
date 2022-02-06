@@ -46,7 +46,7 @@ M134 is a suite of automated reconnaissance tools used for enumeration and disco
 - Finds directories
 
 
-## M134.sh
+## Elements of M134
 
 | **Name**          | **Repository**                                        |
 | ----------------- | ----------------------------------------------------- |
@@ -65,12 +65,11 @@ M134 is a suite of automated reconnaissance tools used for enumeration and disco
 ## Usage
 ### Prerequisites
 
-- [Docker](https://docs.docker.com/get-docker/) service installed
+- Install [Docker](https://docs.docker.com/get-docker/).
 
+This tool can be run in below two ways:
 
-This tool can be run in below ways:
-
-### Option 1 - Using this github repo
+### Way 1 - Using this github repo
 
 To build the container yourself manually, git clone the repo, then build and run the following commands
 
@@ -86,7 +85,7 @@ Also, If you have access token for run findomain. You must configure the Dockerf
     
 
 
-### Option 2 - Running directly from docker hub
+### Way 2 - Running directly from docker hub
 
 Use image from docker hub: [4RON-IN/M134](https://hub.docker.com/u/4RON-IN/M134)
 
