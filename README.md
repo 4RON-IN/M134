@@ -91,11 +91,15 @@ Also, If you have access token for run findomain. You must configure the Dockerf
 Use image from docker hub: [anoopron/m134](https://hub.docker.com/repository/docker/anoopron/m134)
 
     Running without access tokens:
+    
     docker pull anoopron/m134:latest
     docker run --rm -it -v /path/to/local/directory:/mainData anoopron/m134:latest -p [--program] <google> -t [--target] google.com
     
     
+    
+    
     If you have access token then follow this:
+    
     docker pull anoopron/m134:latest
     docker run --rm -it --env findomain_fb_token="fb_token" \
     --env findomain_spyse_token="spyse_token" \
