@@ -3,14 +3,15 @@
   <a href="https://hub.docker.com/u/4RON-IN">
     <img
       alt="M134 -The Weapon you need."
-      src="img/banner.png"
+      src="m134_logo.png"
       width="600"
     />
   </a>
 
   <h3 align="center">M134</h3>
 </p>
-  M134 is a docker based Recon tool.
+<p align="center">
+  M134 - The Weapon you need.
 </p>
 
 ## Table of Contents
@@ -18,18 +19,11 @@
 - [Table of Contents](#table-of-contents)
 - [About M134](#about-M134)
 - [Features](#features)
-- [Flow](#flow)
-- [M134.sh](#M134sh)
 - [Usage](#usage)
   - [Prerequisites](#prerequisites)
   - [Option 1 - Use the github repository](#option-1---use-the-github-repository)
   - [Option 2 - Use the image from docker hub](#option-2---use-the-image-from-docker-hub)
-  - [Considerations to run the container](#considerations-to-run-the-container)
-- [M134 scan results](#M134-scan-results)
-  - [M134 Alert](#M134-alert)
-- [Environment tested](#environment-tested)
 - [Coffee Time](#coffee-time)
-- [Stargazers over time](#stargazers-over-time)
 - [Credits](#credits)
 - [Disclaimer](#disclaimer)
 - [License](#license)
@@ -51,15 +45,6 @@ M134 is a suite of automated reconnaissance tools used for enumeration and disco
 - Finds parameters
 - Finds directories
 
-## Flow
-<p align="center">
-  <a href="https://hub.docker.com/u/4RON-IN">
-    <img
-      src="img/M134_flow.png"
-      width="600"
-    />
-  </a>
-</p>
 
 ## M134.sh
 
@@ -144,7 +129,7 @@ M134 suite of tools was possible because of these guys. Thank you to the followi
 
 ## Disclaimer
 
-- M134 was written for education purposes only.
+- M134 was written for education purposes only. You are responsible for your actions. Developers assume no liability and are not responsible for any misuse or damage.
 
 ## License
 
