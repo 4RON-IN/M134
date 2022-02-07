@@ -31,20 +31,22 @@
 
 ## About M134
 
-M134 is a suite of automated reconnaissance tools used for enumeration and discovery in infromation gathering phase of penetration testing. Its written in bash script and executable on Docker.
-
+M134 is a suite of automated reconnaissance tools used for enumeration and discovery in infromation gathering phase of penetration testing. Its written in bash script and executable on Docker. 
+        
 ## Features
 
-- Subdomain Enumeration
-- Checks alive subdomain
-- Finds URLs at Wayback Machine
-- Screenshots of the subdomains
-- Headers responses files
-- Finds js files
-- Search tokens in js files
-- Search endpoints in js files
-- Finds parameters
-- Finds directories
+- Subdomain Enumeration.
+- Checks alive subdomain.
+- Finds URLs from Wayback Machine.
+- Screenshots of the subdomains.
+- Headers responses files.
+- Finds js files.
+- Searches tokens in js files.
+- Searches endpoints in js files.
+- Finds parameters.
+- Finds directories.
+- Gives unique IP addresses from all the subdomains found.
+- Discovers ports and services (Port scanning).
 
 
 ## Elements of M134
@@ -62,6 +64,7 @@ M134 is a suite of automated reconnaissance tools used for enumeration and disco
 | LinkFinder        |  https://github.com/GerbenJavado/LinkFinder           |
 | paramspider       |  https://github.com/devanshbatham/ParamSpider         |
 | dirsearch         |  https://github.com/maurosoria/dirsearch              |
+| nmap              |  https://nmap.org/                                    |
 
 ## Usage
 ### Prerequisites
